@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>моя тестовая страница</title>
+    <style>
+      body{
+        background-image: linear-gradient(135deg, #e0c3fc, #f0e6ff, #c2e0ff);
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        font-family: Times New Roman, sans-serif;
+      }
+      h1, h2, h3 {
+        text-align: center;
+      }
+      .card-container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .card-link{
+        display: block;
+        width: 250px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-decoration: none;
+        color: black;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card-link:hover{
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      }
+      .card-link img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      object-position: top;
+    }
+    .card-text {
+     padding: 15px;
+     text-align: center;
+   }
+
+   .card-text h3 {
+     margin: 0 0 10px 0;
+   }
+
+   .card-text p {
+     margin: 0;
+     font-size: 14px;
+     color: #555;
+   }
+</style>
+  </head>
+  <body>
+    <h1>ВОКАЛОИДЫ</h1>
+    <h2>PROJECT SEKAI!</h2>
+    <h3>Кликай по карточкам, чтобы узнать больше</h3>
+    <div class="card-container">
+      <a href="rin.html" class="card-link">
+      <img src="kagamine_rin.png" alt="Кагамине Рин">
+      <div class="card-text">
+        <h3>Кагамине Рин</h3>
+        <p>Вокалоид с ярким и энергичным голосом. Любит бананы!</p>
+      </div>
+    </a>
+    <a href="miku.html" class="card-link">
+  <img src="miku.png" alt="Хацунэ Мику">
+  <div class="card-text">
+    <h3>Хацунэ Мику</h3>
+    <p>Самая известная вокалоид. Её синие хвостики узнаёт весь мир.</p>
+  </div>
+</a>
+<a href="len.html" class="card-link">
+  <img src="Len.png" alt="Кагамине Лен">
+  <div class="card-text">
+    <h3>Кагамине Лен</h3>
+    <p>Брат Рин, яркий вокалоид с сильным голосом.</p>
+  </div>
+</a>
+  </body>
+</html>
